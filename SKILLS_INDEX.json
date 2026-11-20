@@ -1,9 +1,7 @@
 {
   "schema_version": 1,
   "repository": "MoRan3421/vedio-skill",
-  "generated_at": "等待 GitHub Actions 首次扫描",
+  "generated_at": "等待首次自动扫描",
   "total": 0,
-  "skills": [],
-  "archive_note": "真实文件索引由 scripts/skill_auto_manager.py 扫描仓库后生成；历史未取回原稿的 Skill 不得填写为现有文件。",
-  "lark_url": "https://njp79hrtgow3.jp.larksuite.com/wiki/UsX4whbC9iBUdkkVmX4jFrrtp4g"
+  "skills": []
 }
