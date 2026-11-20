@@ -16,16 +16,16 @@ def classify(p,body):
     parts='/'.join(p.parts)
     # 已归档目录优先作为分类依据，避免正文关键词导致误分类。
     path_rules=[
-      ('01-人物角色设计','人物角色设计','🎨','character'),
-      ('02-剧本创作','剧本创作','📖','script'),
-      ('03-歌曲与音乐制作','歌曲与音乐制作','🎵','music'),
-      ('04-动漫与影视制作/2D动态漫画制作','动漫与影视制作｜2D动态漫画','🌸','comic2d'),
-      ('04-动漫与影视制作/3D国漫制作','动漫与影视制作｜3D国漫','⚔️','donghua3d'),
-      ('04-动漫与影视制作/真人影视制作','动漫与影视制作｜真人影视','🎬','liveaction'),
-      ('05-分镜与视觉特效','分镜与视觉特效','🎞️','storyboard'),
-      ('06-AI Skill 管理','AI Skill 管理','🧠','skill-management'),
-      ('07-世界观与IP开发','世界观与IP开发','🌍','worldbuilding'),
-      ('08-游戏与互动内容','游戏与互动内容','🎮','game')
+      ('01-人物角色设计','01｜人物角色设计中心','🎨','character'),
+      ('02-剧本创作','02｜剧本创作中心','📖','script'),
+      ('03-歌曲与音乐制作','04｜歌曲与音乐制作中心','🎵','music'),
+      ('03-动漫与影视制作','03｜动漫与影视制作中心','🎬','production'),
+      ('04-歌曲与音乐制作','04｜歌曲与音乐制作中心','🎵','music'),
+      ('05-分镜与视觉特效','05｜分镜与视觉特效中心','🎞️','storyboard'),
+      ('06-AI Skill 管理','06｜AI Skill 管理中心','🧠','skill-management'),
+      ('07-团团官方视觉规范','07｜团团官方视觉规范','🌟','visual-standard'),
+      ('08-统一 Skill 文档规范','08｜统一 Skill 文档规范','📚','document-standard'),
+      ('09-后续新增 Skill 登记规范','09｜后续新增 Skill 登记规范','📝','intake-standard'), ('10-官方管理原则','10｜官方管理原则','📌','management-principles')
     ]
     for prefix,label,emoji,cid in path_rules:
         if prefix in parts: return (cid,label,emoji,'高')
@@ -69,14 +69,20 @@ def main():
     REPORT.parent.mkdir(parents=True,exist_ok=True)
     report={'generated_at':now,'total':len(found),'recognized':sum(x['status']=='已识别' for x in found),'needs_review':sum(x['status']=='待确认' for x in found),'duplicates':sum(x['duplicate_of'] is not None for x in found),'skills':found}
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    groups={}
-    for x in found: groups.setdefault(x['category'],[]).append(x)
-    lines=['# UMX 创意工坊｜AI Skill 自动目录','',f'技能文件：{len(found)} 项',f'扫描时间（UTC）：{now}','','## 技能分类目录','']
-    for category,items in groups.items():
-        lines += [f"### {items[0]['emoji']} {category}（{len(items)} 项）",'']
+    lines=['# 🌙 UMX AI SKILL LIBRARY｜自动技能目录','','技能文件：{} 项'.format(len(found)),'扫描时间（UTC）：{}'.format(now),'','## 官方分类目录','']
+    official=[
+      ('01｜人物角色设计中心','🎨'),('02｜剧本创作中心','📖'),
+      ('03｜动漫与影视制作中心','🎬'),('04｜歌曲与音乐制作中心','🎵'),
+      ('05｜分镜与视觉特效中心','🎞️'),('06｜AI Skill 管理中心','🧠'),
+      ('07｜团团官方视觉规范','🌟'),('08｜统一 Skill 文档规范','📚'),
+      ('09｜后续新增 Skill 登记规范','📝'),('10｜官方管理原则','📌')]
+    for category,emoji in official:
+        items=[x for x in found if x['category']==category]
+        lines += ['### {} {}（{} 项）'.format(emoji,category,len(items)),'']
+        if not items: lines += ['- 暂无已归档 Skill。','']
         for x in items: lines += [f"- [{x['name']}]({x['path']}) — {x['version']} / {x['status']}",f"  - 用途：{x['description']}"]
         lines.append('')
-    lines += ['## 统一分类规则','','- OP、ED、主题曲、BGM、MV 全部归入「歌曲与音乐制作」，不单独建立 MV 一级分类。','- 2D 动态漫画、3D 国漫、真人影视分别识别与归档。','- 已归档目录优先于关键词；低置信度文件标记待确认。','- 不删除、不改写原始 Skill。','','## 自动管理文件','','- 索引：SKILLS_INDEX.json','- 报告：reports/skill-scan-report.json','- 程序：scripts/skill_auto_manager.py','- 工作流：.github/workflows/skill-auto-manager.yml','']
+    lines += ['## 统一分类规则','','- OP、ED、主题曲、BGM、MV 全部归入「04｜歌曲与音乐制作中心」，不单独建立 MV 一级分类。','- 原始 Skill 完整内容优先；目录摘要只用于导航。','- 不确定分类时标记待确认；不删除、不改写原始文件。','','## 自动管理文件','','- 索引：SKILLS_INDEX.json','- 报告：reports/skill-scan-report.json','- 程序：scripts/skill_auto_manager.py','- 工作流：.github/workflows/skill-auto-manager.yml','']
     README.write_text('\n'.join(lines),encoding='utf-8')
     print('扫描完成：{} 项；待确认：{}；重复：{}'.format(len(found),report['needs_review'],report['duplicates']))
 if __name__=='__main__': main()
