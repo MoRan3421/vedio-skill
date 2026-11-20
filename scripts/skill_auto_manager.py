@@ -12,8 +12,8 @@ EXTENSIONS={".txt",".md",".skill",".prompt"}
 CATEGORIES=[
 {"id":"character","name":"人物角色设计","emoji":"🎨","terms":["人物设计","角色设计","character design","character sheet","三视图","角色设定集","人物设定"]},
 {"id":"script","name":"剧本创作","emoji":"📖","terms":["剧本","编剧","screenwriting","screenplay","script master","分镜剧本"]},
-{"id":"music","name":"主题曲与音乐制作","emoji":"🎵","terms":["主题曲","歌曲创作","音乐制作","theme song","song creation","歌词","suno"]},
-{"id":"mv","name":"MV 制作","emoji":"🎞️","terms":["mv制作","music video","音乐视频","mv production"]},
+{"id":"music","name":"歌曲与音乐制作","emoji":"🎵","terms":["主题曲","歌曲创作","音乐制作","theme song","song creation","歌词","suno"]},
+
 {"id":"comic2d","name":"2D 动态漫画","emoji":"🌸","terms":["2d动态漫画","dynamic comic","animated comic","2d animated","动态漫画制作"]},
 {"id":"donghua3d","name":"3D 国漫","emoji":"⚔️","terms":["3d国漫","3d donghua","chinese 3d animation","donghua production"]},
 {"id":"liveaction","name":"真人影视","emoji":"🎬","terms":["真人影视","live-action","live action","film and television","影视制作","真人电影"]},
