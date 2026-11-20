@@ -6,85 +6,111 @@
   "total": 11,
   "categories": [
     {
-      "name": "人物角色设计",
-      "count": 4,
+      "id": "00",
+      "name": "知识库首页",
+      "description": "官方分类导航、仓库说明与入口"
+    },
+    {
+      "id": "01",
+      "name": "人物角色设计中心",
       "subcategories": [
-        "2D动态漫画人物设计",
-        "3D国漫人物设计",
-        "真人影视人物设计",
-        "通用人物设定集与角色设定板"
+        "A. 2D动态漫画人物设计",
+        "B. 3D国漫人物设计",
+        "C. 真人影视人物设计",
+        "D. 通用专业人物设定系统"
       ]
     },
     {
-      "name": "剧本创作",
-      "count": 3,
+      "id": "02",
+      "name": "剧本创作中心",
       "subcategories": [
-        "2D动态漫画剧本",
-        "3D国漫剧本",
-        "真人影视剧本"
+        "A. 2D动态漫画剧本",
+        "B. 3D国漫剧本",
+        "C. 真人影视剧本",
+        "D. 漫剧剧本总控"
       ]
     },
     {
-      "name": "歌曲与音乐制作",
-      "count": 1,
+      "id": "03",
+      "name": "动漫与影视制作中心",
       "subcategories": [
-        "主题曲与原创歌曲",
-        "OP与ED",
-        "BGM与配乐",
-        "MV制作"
+        "A. 2D动态漫画制作",
+        "B. 3D国漫制作",
+        "C. 真人影视制作"
       ]
     },
     {
-      "name": "动漫与影视制作",
-      "count": 3,
+      "id": "04",
+      "name": "歌曲与音乐制作中心",
       "subcategories": [
-        "2D动态漫画制作",
-        "3D国漫制作",
-        "真人影视制作"
+        "A. 原创主题曲",
+        "B. OP片头曲",
+        "C. ED片尾曲",
+        "D. BGM背景音乐",
+        "E. MV制作",
+        "F. 歌词与音乐创作"
       ]
     },
     {
-      "name": "分镜与视觉特效",
-      "count": 0,
+      "id": "05",
+      "name": "分镜与视觉特效中心",
       "subcategories": [
-        "分镜与九宫格",
-        "摄影机位与运镜",
-        "动作设计",
-        "视觉特效与粒子",
-        "光影与场景连续性"
+        "A. 分镜制作",
+        "B. 镜头设计",
+        "C. 战斗与视觉特效",
+        "D. 动作与舞蹈"
       ]
     },
     {
-      "name": "AI Skill 管理",
-      "count": 0,
+      "id": "06",
+      "name": "AI Skill管理中心",
       "subcategories": [
-        "自动识别与分类",
-        "索引与README生成",
-        "版本管理",
-        "质量检查与归档"
+        "A. Skill文件管理",
+        "B. 自动识别与分类",
+        "C. GitHub自动化",
+        "D. 知识库维护"
       ]
     },
     {
-      "name": "世界观与IP开发",
-      "count": 0,
+      "id": "07",
+      "name": "团团官方视觉规范",
       "subcategories": [
-        "世界观设定",
-        "角色关系与设定管理",
-        "系列与跨媒体IP规划"
+        "官方发色体系",
+        "视觉设计要求",
+        "页面风格"
       ]
     },
     {
-      "name": "游戏与互动内容",
-      "count": 0,
+      "id": "08",
+      "name": "统一Skill文档规范",
       "subcategories": [
-        "游戏系统设计",
-        "Roblox与互动世界",
-        "玩法与数值设计"
+        "原始提示词完整保存",
+        "文件命名与版本标注",
+        "来源与更新记录"
+      ]
+    },
+    {
+      "id": "09",
+      "name": "后续新增Skill登记规范",
+      "subcategories": [
+        "新增Skill登记",
+        "分类识别",
+        "双平台归档"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "官方管理原则",
+      "subcategories": [
+        "真实性核验",
+        "原文保留",
+        "分类一致",
+        "版本与权限管理"
       ]
     }
   ],
   "rules": {
-    "music": "OP、ED、主题曲、BGM、MV统一归入歌曲与音乐制作，不单独设置MV一级分类",
+    "music": "OP、ED、主题曲、BGM、MV统一归入04｜歌曲与音乐制作中心；MV不单独设一级分类",
     "preserve_original": true,
     "unverified": "待补原稿，不以摘要替代原文"
   },
@@ -92,84 +118,84 @@
     {
       "id": "UMX-001",
       "name": "UMX 2D DYNAMIC COMIC CHARACTER DESIGN MASTER SYSTEM",
-      "category": "人物角色设计",
       "path": "01-人物角色设计/2D动态漫画人物设计/原始Skill.txt",
+      "category": "01｜人物角色设计中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-002",
       "name": "PROFESSIONAL 3D DONGHUA CHARACTER DESIGN SYSTEM",
-      "category": "人物角色设计",
       "path": "01-人物角色设计/3D国漫人物设计/原始Skill.txt",
+      "category": "01｜人物角色设计中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-003",
       "name": "PROFESSIONAL LIVE-ACTION CHARACTER DESIGN SYSTEM",
-      "category": "人物角色设计",
       "path": "01-人物角色设计/真人影视人物设计/原始Skill.txt",
+      "category": "01｜人物角色设计中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-004",
       "name": "PROFESSIONAL CHARACTER DESIGN SHEET GENERATION SYSTEM",
-      "category": "人物角色设计",
       "path": "01-人物角色设计/通用人物设定集V8/原始Skill.txt",
+      "category": "01｜人物角色设计中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-005",
       "name": "2D DYNAMIC COMIC CINEMATIC SCREENWRITING SYSTEM",
-      "category": "剧本创作",
       "path": "02-剧本创作/2D动态漫画剧本/原始Skill.txt",
+      "category": "02｜剧本创作中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-006",
       "name": "CHINESE 3D DONGHUA CINEMATIC SCRIPT MASTER SYSTEM",
-      "category": "剧本创作",
       "path": "02-剧本创作/3D国漫剧本/原始Skill.txt",
+      "category": "02｜剧本创作中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-007",
       "name": "REAL LIVE-ACTION FILM & DRAMA SCRIPT MASTER SYSTEM",
-      "category": "剧本创作",
       "path": "02-剧本创作/真人影视剧本/原始Skill.txt",
+      "category": "02｜剧本创作中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-008",
       "name": "PROFESSIONAL THEME SONG CREATION SYSTEM",
-      "category": "歌曲与音乐制作",
-      "path": "03-歌曲与音乐制作/主题曲创作/原始Skill.txt",
+      "path": "04-歌曲与音乐制作/主题曲创作/原始Skill.txt",
+      "category": "04｜歌曲与音乐制作中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-009",
       "name": "UMX CINEMATIC 2D ANIMATED COMIC MASTER SYSTEM",
-      "category": "动漫与影视制作｜2D动态漫画",
-      "path": "04-动漫与影视制作/2D动态漫画制作/原始Skill.txt",
+      "path": "03-动漫与影视制作/2D动态漫画制作/原始Skill.txt",
+      "category": "03｜动漫与影视制作中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-010",
       "name": "PROFESSIONAL 3D DONGHUA PRODUCTION MASTER SYSTEM",
-      "category": "动漫与影视制作｜3D国漫",
-      "path": "04-动漫与影视制作/3D国漫制作/原始Skill.txt",
+      "path": "03-动漫与影视制作/3D国漫制作/原始Skill.txt",
+      "category": "03｜动漫与影视制作中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-011",
       "name": "PROFESSIONAL LIVE-ACTION FILM & TELEVISION PRODUCTION SYSTEM",
-      "category": "动漫与影视制作｜真人影视",
-      "path": "04-动漫与影视制作/真人影视制作/原始Skill.txt",
+      "path": "03-动漫与影视制作/真人影视制作/原始Skill.txt",
+      "category": "03｜动漫与影视制作中心",
       "status": "已在 GitHub main 分支核实"
     },
     {
       "id": "UMX-PENDING-001",
       "name": "PROFESSIONAL AI MUSIC VIDEO PRODUCTION SYSTEM V1.0",
-      "category": "歌曲与音乐制作 / MV制作",
+      "category": "04｜歌曲与音乐制作中心 / E. MV制作",
       "status": "待补原稿",
       "reason": "已确认曾生成，但当前仓库尚无可核实的完整正文"
     }
