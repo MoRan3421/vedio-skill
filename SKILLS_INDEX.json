@@ -1,7 +1,177 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "repository": "MoRan3421/vedio-skill",
-  "generated_at": "等待首次自动扫描",
-  "total": 0,
-  "skills": []
+  "language": "zh-CN",
+  "generated_at": "2026-11-20",
+  "total": 11,
+  "categories": [
+    {
+      "id": "01",
+      "name": "人物角色设计",
+      "subcategories": [
+        "2D动态漫画人物设计",
+        "3D国漫人物设计",
+        "真人影视人物设计",
+        "通用人物设定集与角色设定板"
+      ]
+    },
+    {
+      "id": "02",
+      "name": "剧本创作",
+      "subcategories": [
+        "2D动态漫画剧本",
+        "3D国漫剧本",
+        "真人影视剧本"
+      ]
+    },
+    {
+      "id": "03",
+      "name": "歌曲与音乐制作",
+      "subcategories": [
+        "主题曲与原创歌曲",
+        "OP与ED",
+        "BGM与配乐",
+        "MV制作"
+      ]
+    },
+    {
+      "id": "04",
+      "name": "动漫与影视制作",
+      "subcategories": [
+        "2D动态漫画制作",
+        "3D国漫制作",
+        "真人影视制作"
+      ]
+    },
+    {
+      "id": "05",
+      "name": "分镜与视觉特效",
+      "subcategories": [
+        "分镜与九宫格",
+        "摄影机位与运镜",
+        "动作设计",
+        "视觉特效与粒子",
+        "光影与场景连续性"
+      ]
+    },
+    {
+      "id": "06",
+      "name": "AI Skill 管理",
+      "subcategories": [
+        "自动识别与分类",
+        "索引与README生成",
+        "版本管理",
+        "质量检查与归档"
+      ]
+    },
+    {
+      "id": "07",
+      "name": "世界观与IP开发",
+      "subcategories": [
+        "世界观设定",
+        "角色关系与设定管理",
+        "系列与跨媒体IP规划"
+      ]
+    },
+    {
+      "id": "08",
+      "name": "游戏与互动内容",
+      "subcategories": [
+        "游戏系统设计",
+        "Roblox与互动世界",
+        "玩法与数值设计"
+      ]
+    }
+  ],
+  "rules": {
+    "music": "OP、ED、主题曲、BGM、MV统一归入歌曲与音乐制作，不单独设置MV一级分类",
+    "preserve_original": true,
+    "unverified": "待补原稿，不以摘要替代原文"
+  },
+  "skills": [
+    {
+      "id": "UMX-001",
+      "name": "UMX 2D DYNAMIC COMIC CHARACTER DESIGN MASTER SYSTEM",
+      "category": "人物角色设计",
+      "path": "UMX 2D DYNAMIC COMIC CHARACTER DESIGN MASTER SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-002",
+      "name": "PROFESSIONAL 3D DONGHUA CHARACTER DESIGN SYSTEM",
+      "category": "人物角色设计",
+      "path": "PROFESSIONAL 3D DONGHUA CHARACTER DESIGN SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-003",
+      "name": "PROFESSIONAL LIVE-ACTION CHARACTER DESIGN SYSTEM",
+      "category": "人物角色设计",
+      "path": "PROFESSIONAL LIVE-ACTION CHARACTER DESIGN SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-004",
+      "name": "PROFESSIONAL CHARACTER DESIGN SHEET GENERATION SYSTEM",
+      "category": "人物角色设计",
+      "path": "PROFESSIONAL CHARACTER DESIGN SHEET GENERATION SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-005",
+      "name": "2D DYNAMIC COMIC CINEMATIC SCREENWRITING SYSTEM",
+      "category": "剧本创作",
+      "path": "2D DYNAMIC COMIC CINEMATIC SCREENWRITING SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-006",
+      "name": "CHINESE 3D DONGHUA CINEMATIC SCRIPT MASTER SYSTEM",
+      "category": "剧本创作",
+      "path": "CHINESE 3D DONGHUA CINEMATIC SCRIPT MASTER SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-007",
+      "name": "REAL LIVE-ACTION FILM & DRAMA SCRIPT MASTER SYSTEM",
+      "category": "剧本创作",
+      "path": "REAL LIVE-ACTION FILM & DRAMA SCRIPT MASTER SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-008",
+      "name": "PROFESSIONAL THEME SONG CREATION SYSTEM",
+      "category": "歌曲与音乐制作",
+      "path": "PROFESSIONAL THEME SONG CREATION SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-009",
+      "name": "UMX CINEMATIC 2D ANIMATED COMIC MASTER SYSTEM",
+      "category": "动漫与影视制作",
+      "path": "UMX CINEMATIC 2D ANIMATED COMIC MASTER SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-010",
+      "name": "PROFESSIONAL 3D DONGHUA PRODUCTION MASTER SYSTEM",
+      "category": "动漫与影视制作",
+      "path": "PROFESSIONAL 3D DONGHUA PRODUCTION MASTER SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-011",
+      "name": "PROFESSIONAL LIVE-ACTION FILM & TELEVISION PRODUCTION SYSTEM",
+      "category": "动漫与影视制作",
+      "path": "PROFESSIONAL LIVE-ACTION FILM & TELEVISION PRODUCTION SYSTEM",
+      "status": "已在仓库核实"
+    },
+    {
+      "id": "UMX-PENDING-001",
+      "name": "PROFESSIONAL AI MUSIC VIDEO PRODUCTION SYSTEM V1.0",
+      "category": "歌曲与音乐制作 / MV制作",
+      "status": "待补原稿",
+      "reason": "已确认曾生成，但当前无法核实完整正文"
+    }
+  ]
 }
