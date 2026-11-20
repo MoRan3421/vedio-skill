@@ -2,162 +2,176 @@
   "schema_version": 2,
   "repository": "MoRan3421/vedio-skill",
   "language": "zh-CN",
-  "generated_at": "2026-11-20T00:37:11.235284+00:00",
+  "generated_at": "2026-11-20",
   "total": 11,
+  "categories": [
+    {
+      "name": "人物角色设计",
+      "count": 4,
+      "subcategories": [
+        "2D动态漫画人物设计",
+        "3D国漫人物设计",
+        "真人影视人物设计",
+        "通用人物设定集与角色设定板"
+      ]
+    },
+    {
+      "name": "剧本创作",
+      "count": 3,
+      "subcategories": [
+        "2D动态漫画剧本",
+        "3D国漫剧本",
+        "真人影视剧本"
+      ]
+    },
+    {
+      "name": "歌曲与音乐制作",
+      "count": 1,
+      "subcategories": [
+        "主题曲与原创歌曲",
+        "OP与ED",
+        "BGM与配乐",
+        "MV制作"
+      ]
+    },
+    {
+      "name": "动漫与影视制作",
+      "count": 3,
+      "subcategories": [
+        "2D动态漫画制作",
+        "3D国漫制作",
+        "真人影视制作"
+      ]
+    },
+    {
+      "name": "分镜与视觉特效",
+      "count": 0,
+      "subcategories": [
+        "分镜与九宫格",
+        "摄影机位与运镜",
+        "动作设计",
+        "视觉特效与粒子",
+        "光影与场景连续性"
+      ]
+    },
+    {
+      "name": "AI Skill 管理",
+      "count": 0,
+      "subcategories": [
+        "自动识别与分类",
+        "索引与README生成",
+        "版本管理",
+        "质量检查与归档"
+      ]
+    },
+    {
+      "name": "世界观与IP开发",
+      "count": 0,
+      "subcategories": [
+        "世界观设定",
+        "角色关系与设定管理",
+        "系列与跨媒体IP规划"
+      ]
+    },
+    {
+      "name": "游戏与互动内容",
+      "count": 0,
+      "subcategories": [
+        "游戏系统设计",
+        "Roblox与互动世界",
+        "玩法与数值设计"
+      ]
+    }
+  ],
+  "rules": {
+    "music": "OP、ED、主题曲、BGM、MV统一归入歌曲与音乐制作，不单独设置MV一级分类",
+    "preserve_original": true,
+    "unverified": "待补原稿，不以摘要替代原文"
+  },
   "skills": [
     {
-      "id": "UMX-a1516ab632",
-      "name": "MASTER SKILL V1.0",
+      "id": "UMX-001",
+      "name": "UMX 2D DYNAMIC COMIC CHARACTER DESIGN MASTER SYSTEM",
+      "category": "人物角色设计",
       "path": "01-人物角色设计/2D动态漫画人物设计/原始Skill.txt",
-      "category_id": "character",
-      "category": "人物角色设计",
-      "emoji": "🎨",
-      "confidence": "中",
-      "version": "V1.0",
-      "description": "**系统类型：** 专业级二维动态漫画人物视觉设计总控系统",
-      "sha256": "a1516ab632f288d4064cd4051a9683e9b6dc185377cb9eab8011236897dd02eb",
-      "duplicate_of": null,
-      "status": "已识别"
+      "status": "已在 GitHub main 分支核实"
     },
     {
-      "id": "UMX-a006bd304e",
-      "name": "MASTER SKILL V1.0",
+      "id": "UMX-002",
+      "name": "PROFESSIONAL 3D DONGHUA CHARACTER DESIGN SYSTEM",
+      "category": "人物角色设计",
       "path": "01-人物角色设计/3D国漫人物设计/原始Skill.txt",
-      "category_id": "character",
-      "category": "人物角色设计",
-      "emoji": "🎨",
-      "confidence": "中",
-      "version": "V1.0",
-      "description": "**系统类型：** 3D国漫人物视觉设计总控系统",
-      "sha256": "a006bd304eb83a2eebbf9435be82bdf71575d22d7c7ead47b700f7527ebb173b",
-      "duplicate_of": null,
-      "status": "已识别"
+      "status": "已在 GitHub main 分支核实"
     },
     {
-      "id": "UMX-d52ea99dd7",
-      "name": "MASTER SKILL V1.0",
+      "id": "UMX-003",
+      "name": "PROFESSIONAL LIVE-ACTION CHARACTER DESIGN SYSTEM",
+      "category": "人物角色设计",
       "path": "01-人物角色设计/真人影视人物设计/原始Skill.txt",
-      "category_id": "character",
-      "category": "人物角色设计",
-      "emoji": "🎨",
-      "confidence": "中",
-      "version": "V1.0",
-      "description": "系统类型：通用真人影视人物设计系统",
-      "sha256": "d52ea99dd7477ca0f3643410b8d4182239be6f7ddf481896e84f30af38366e7d",
-      "duplicate_of": null,
-      "status": "已识别"
+      "status": "已在 GitHub main 分支核实"
     },
     {
-      "id": "UMX-2b79397c82",
-      "name": "MASTER SKILL V8.0",
+      "id": "UMX-004",
+      "name": "PROFESSIONAL CHARACTER DESIGN SHEET GENERATION SYSTEM",
+      "category": "人物角色设计",
       "path": "01-人物角色设计/通用人物设定集V8/原始Skill.txt",
-      "category_id": "character",
-      "category": "人物角色设计",
-      "emoji": "🎨",
-      "confidence": "中",
-      "version": "V8.0",
-      "description": "系统类型：通用人物视觉设定板制作系统",
-      "sha256": "2b79397c82e208f875cd8f3612669df6c829bf2b06eefb35ad49d6332a7f277d",
-      "duplicate_of": null,
-      "status": "已识别"
+      "status": "已在 GitHub main 分支核实"
     },
     {
-      "id": "UMX-7b0db84c41",
-      "name": "MASTER SKILL V1.0",
-      "path": "02-剧本创作/真人影视剧本/原始Skill.txt",
-      "category_id": "liveaction",
-      "category": "动漫与影视制作｜真人影视",
-      "emoji": "🎬",
-      "confidence": "中",
-      "version": "V1.0",
-      "description": "系统类型：专业真人影视全流程剧本创作系统",
-      "sha256": "7b0db84c41508775f4c9cc8fb56f15dbefa79a1d53364454f5c6313422ad0060",
-      "duplicate_of": null,
-      "status": "已识别"
-    },
-    {
-      "id": "UMX-ae1953e043",
-      "name": "MASTER SKILL V1.0",
+      "id": "UMX-005",
+      "name": "2D DYNAMIC COMIC CINEMATIC SCREENWRITING SYSTEM",
+      "category": "剧本创作",
       "path": "02-剧本创作/2D动态漫画剧本/原始Skill.txt",
-      "category_id": "uncategorized",
-      "category": "待确认分类",
-      "emoji": "📥",
-      "confidence": "低",
-      "version": "V1.0",
-      "description": "**系统类型：** 专业级AI动漫编剧、导演、分镜、叙事总控 Skill",
-      "sha256": "ae1953e043b52a642144af16a922f6b3d76ca8db0e3eb0bea2a11d685b55de25",
-      "duplicate_of": null,
-      "status": "待确认"
+      "status": "已在 GitHub main 分支核实"
     },
     {
-      "id": "UMX-42128a3eac",
-      "name": "MASTER SKILL V1.0",
+      "id": "UMX-006",
+      "name": "CHINESE 3D DONGHUA CINEMATIC SCRIPT MASTER SYSTEM",
+      "category": "剧本创作",
       "path": "02-剧本创作/3D国漫剧本/原始Skill.txt",
-      "category_id": "uncategorized",
-      "category": "待确认分类",
-      "emoji": "📥",
-      "confidence": "低",
-      "version": "V1.0",
-      "description": "系统类型：3D国漫专业编剧＋导演＋分镜＋动画制作总控系统",
-      "sha256": "42128a3eac07bd1e5d8ec2714ef1f258ad9bf1906d36a9d3b2f7a2650ca0d347",
-      "duplicate_of": null,
-      "status": "待确认"
+      "status": "已在 GitHub main 分支核实"
     },
     {
-      "id": "UMX-ba4b3384bf",
-      "name": "MASTER SKILL V1.0",
-      "path": "04-动漫与影视制作/2D动态漫画制作/原始Skill.txt",
-      "category_id": "uncategorized",
-      "category": "待确认分类",
-      "emoji": "📥",
-      "confidence": "低",
-      "version": "V1.0",
-      "description": "**系统类型：** 专业级2D动态漫画全流程制作系统",
-      "sha256": "ba4b3384bfada223d4f87bdddfefdb5180942b952a37f57c53d6987576e75378",
-      "duplicate_of": null,
-      "status": "待确认"
+      "id": "UMX-007",
+      "name": "REAL LIVE-ACTION FILM & DRAMA SCRIPT MASTER SYSTEM",
+      "category": "剧本创作",
+      "path": "02-剧本创作/真人影视剧本/原始Skill.txt",
+      "status": "已在 GitHub main 分支核实"
     },
     {
-      "id": "UMX-7a5d069c04",
-      "name": "MASTER SKILL V1.0",
-      "path": "04-动漫与影视制作/真人影视制作/原始Skill.txt",
-      "category_id": "uncategorized",
-      "category": "待确认分类",
-      "emoji": "📥",
-      "confidence": "低",
-      "version": "V1.0",
-      "description": "**系统类型：** 全流程真人影视制作总控 Skill",
-      "sha256": "7a5d069c04a70bc8e1687dae618ea4d4b2ca9adcdf1bc8c208f1ec51f1a5bb40",
-      "duplicate_of": null,
-      "status": "待确认"
-    },
-    {
-      "id": "UMX-ae41b166d9",
-      "name": "《超元宇宙》3D国漫全流程制作总控系统",
-      "path": "04-动漫与影视制作/3D国漫制作/原始Skill.txt",
-      "category_id": "uncategorized",
-      "category": "待确认分类",
-      "emoji": "📥",
-      "confidence": "低",
-      "version": "V1.0",
-      "description": "**系统类型：** 3D国漫全流程AI制作总控",
-      "sha256": "ae41b166d93f6028c2662704e6bf6f026735a5667d4c53a143778cff6f7deb1b",
-      "duplicate_of": null,
-      "status": "待确认"
-    },
-    {
-      "id": "UMX-212ad04ceb",
-      "name": "MASTER SKILL V1.0",
-      "path": "03-歌曲与音乐制作/主题曲创作/原始Skill.txt",
-      "category_id": "music",
+      "id": "UMX-008",
+      "name": "PROFESSIONAL THEME SONG CREATION SYSTEM",
       "category": "歌曲与音乐制作",
-      "emoji": "🎵",
-      "confidence": "高",
-      "version": "V1.0",
-      "description": "最终目标：创作具有独立辨识度、情绪感染力、专业制作规格及长期传播价值的原创主题曲。",
-      "sha256": "212ad04ceb9d68a0b91cbba28ad37cf780d1d217809f422fbdd5fb6a45acf580",
-      "duplicate_of": null,
-      "status": "已识别"
+      "path": "03-歌曲与音乐制作/主题曲创作/原始Skill.txt",
+      "status": "已在 GitHub main 分支核实"
+    },
+    {
+      "id": "UMX-009",
+      "name": "UMX CINEMATIC 2D ANIMATED COMIC MASTER SYSTEM",
+      "category": "动漫与影视制作｜2D动态漫画",
+      "path": "04-动漫与影视制作/2D动态漫画制作/原始Skill.txt",
+      "status": "已在 GitHub main 分支核实"
+    },
+    {
+      "id": "UMX-010",
+      "name": "PROFESSIONAL 3D DONGHUA PRODUCTION MASTER SYSTEM",
+      "category": "动漫与影视制作｜3D国漫",
+      "path": "04-动漫与影视制作/3D国漫制作/原始Skill.txt",
+      "status": "已在 GitHub main 分支核实"
+    },
+    {
+      "id": "UMX-011",
+      "name": "PROFESSIONAL LIVE-ACTION FILM & TELEVISION PRODUCTION SYSTEM",
+      "category": "动漫与影视制作｜真人影视",
+      "path": "04-动漫与影视制作/真人影视制作/原始Skill.txt",
+      "status": "已在 GitHub main 分支核实"
+    },
+    {
+      "id": "UMX-PENDING-001",
+      "name": "PROFESSIONAL AI MUSIC VIDEO PRODUCTION SYSTEM V1.0",
+      "category": "歌曲与音乐制作 / MV制作",
+      "status": "待补原稿",
+      "reason": "已确认曾生成，但当前仓库尚无可核实的完整正文"
     }
   ]
 }
