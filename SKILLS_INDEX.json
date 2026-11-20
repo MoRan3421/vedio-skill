@@ -268,5 +268,13 @@
     "music": "OP、ED、主题曲、BGM、MV统一归入04｜歌曲与音乐制作中心；MV不单独设置一级分类",
     "preserve_original": true,
     "unverified": "原稿缺失时标记待补，不以摘要替代原文"
-  }
+  },
+  "pending_items": [
+    {
+      "name": "PROFESSIONAL AI MUSIC VIDEO PRODUCTION SYSTEM V1.0",
+      "category": "04｜歌曲与音乐制作中心 / E. MV制作",
+      "status": "待补原稿",
+      "reason": "已确认曾生成，但目前无法核实完整原文；不得用摘要代替"
+    }
+  ]
 }
