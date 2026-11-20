@@ -18,7 +18,6 @@ def classify(p,body):
     path_rules=[
       ('01-人物角色设计','01｜人物角色设计中心','🎨','character'),
       ('02-剧本创作','02｜剧本创作中心','📖','script'),
-      ('03-歌曲与音乐制作','04｜歌曲与音乐制作中心','🎵','music'),
       ('03-动漫与影视制作','03｜动漫与影视制作中心','🎬','production'),
       ('04-歌曲与音乐制作','04｜歌曲与音乐制作中心','🎵','music'),
       ('05-分镜与视觉特效','05｜分镜与视觉特效中心','🎞️','storyboard'),
@@ -31,14 +30,14 @@ def classify(p,body):
         if prefix in parts: return (cid,label,emoji,'高')
     hay=(p.name+' '+body[:16000]).lower()
     keyword_rules=[
-      ('character','人物角色设计','🎨',['character design','character sheet','人物设计','角色设计','人物设定','三视图','设定集']),
-      ('script','剧本创作','📖',['screenwriting','screenplay','script master','剧本','编剧','叙事总控']),
-      ('music','歌曲与音乐制作','🎵',['theme song','song creation','music video','mv','主题曲','歌曲','音乐','配乐','suno','op片头','ed片尾','bgm']),
-      ('comic2d','动漫与影视制作｜2D动态漫画','🌸',['dynamic comic','animated comic','2d animated','2d动态漫画','二维动态漫画']),
-      ('donghua3d','动漫与影视制作｜3D国漫','⚔️',['3d donghua','chinese 3d animation','3d国漫','国漫制作']),
-      ('liveaction','动漫与影视制作｜真人影视','🎬',['live-action','live action','film and television','真人影视','真人电影']),
-      ('storyboard','分镜与视觉特效','🎞️',['storyboard','visual effects','vfx','分镜','运镜','视觉特效','粒子特效']),
-      ('skill-management','AI Skill 管理','🧠',['skill manager','skill management','auto manager','自动识别','自动分类','skill管理'])
+      ('character','01｜人物角色设计中心','🎨',['character design','character sheet','人物设计','角色设计','人物设定','三视图','设定集']),
+      ('script','02｜剧本创作中心','📖',['screenwriting','screenplay','script master','剧本','编剧','叙事总控']),
+      ('music','04｜歌曲与音乐制作中心','🎵',['theme song','song creation','music video','mv','主题曲','歌曲','音乐','配乐','suno','op片头','ed片尾','bgm']),
+      ('comic2d','03｜动漫与影视制作中心','🎬',['dynamic comic','animated comic','2d animated','2d动态漫画','二维动态漫画']),
+      ('donghua3d','03｜动漫与影视制作中心','🎬',['3d donghua','chinese 3d animation','3d国漫','国漫制作']),
+      ('liveaction','03｜动漫与影视制作中心','🎬',['live-action','live action','film and television','真人影视','真人电影']),
+      ('storyboard','05｜分镜与视觉特效中心','🎞️',['storyboard','visual effects','vfx','分镜','运镜','视觉特效','粒子特效']),
+      ('skill-management','06｜AI Skill 管理中心','🧠',['skill manager','skill management','auto manager','自动识别','自动分类','skill管理'])
     ]
     for cid,label,emoji,terms in keyword_rules:
         if any(term in hay for term in terms): return (cid,label,emoji,'中')
