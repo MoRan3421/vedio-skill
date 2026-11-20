@@ -69,6 +69,10 @@
 - 暂无已归档 Skill。
 
 
+## 待补原稿
+
+- **PROFESSIONAL AI MUSIC VIDEO PRODUCTION SYSTEM V1.0**：归入「04｜歌曲与音乐制作中心 / E. MV 制作」。已确认曾生成，但目前无法核实完整原文，因此先登记待补，不以摘要冒充完整 Skill。
+
 ## 统一分类规则
 
 - OP、ED、主题曲、BGM、MV 全部归入「04｜歌曲与音乐制作中心」，不单独建立 MV 一级分类。
