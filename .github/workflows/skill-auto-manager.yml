@@ -1,0 +1,43 @@
+name: UMX Skill 自动识别与 README 更新
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "README.md"
+      - "SKILLS_INDEX.json"
+      - "reports/**"
+      - ".github/workflows/skill-auto-manager.yml"
+      - "scripts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: umx-skill-index-main
+  cancel-in-progress: false
+
+jobs:
+  scan-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 扫描、分类并生成 README
+        run: python scripts/skill_auto_manager.py
+      - name: 提交自动生成结果
+        run: |
+          if git diff --quiet -- README.md SKILLS_INDEX.json reports/skill-scan-report.json; then
+            echo "没有索引变化，无需提交。"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md SKILLS_INDEX.json reports/skill-scan-report.json
+          git commit -m "自动更新 Skill 索引与 README"
+          git push
